@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+bp_dir=$(cd $(dirname $0); cd ..; pwd)
+build_dir=$1
+cache_dir=$2
+env_dir=$3
+
+cd $build_dir
+
+echo ""
+echo "------> Building webpack bundle"
+bin/compile
